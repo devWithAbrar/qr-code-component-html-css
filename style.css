@@ -27,6 +27,10 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /*==================== Starting styling ====================*/
 
 .container {
@@ -44,6 +48,8 @@ body {
   border-radius: 20px;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 0 20px #c4c2c2;
+  transition: transform .3s;
 }
 
 .card img {
@@ -63,4 +69,10 @@ body {
   font-size: 15px;
   color: var(--p-text-color);
   margin-bottom: 20px;
+}
+
+/*==================== Adding Hover effect ====================*/
+
+.card:hover {
+  transform: translateY(-10px);
 }
